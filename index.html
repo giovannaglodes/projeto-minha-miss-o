@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma missão interativa com nomes e afirmações aleatórias.">
+  <title>Minha missão | Projeto Alura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="topo">
+      <span class="selo">PROJETO ALURA</span>
+      <h1>Minha missão</h1>
+      <p class="subtitulo">Uma pequena missão para lembrar do seu potencial.</p>
+    </header>
+
+    <section class="painel" aria-live="polite">
+      <div id="tela-inicial" class="tela">
+        <div class="icone">✦</div>
+        <h2>Pronto para começar?</h2>
+        <p>Você vai receber um nome, uma afirmação positiva e três passos para cumprir sua missão.</p>
+        <button id="botao-iniciar" class="botao principal">Começar missão</button>
+      </div>
+
+      <div id="tela-missao" class="tela escondido">
+        <p class="etiqueta">SUA MISSÃO FOI DESTINADA A</p>
+        <h2 id="nome-sorteado" class="nome"></h2>
+        <div class="afirmacao">
+          <span class="aspas">“</span>
+          <p id="texto-afirmacao"></p>
+        </div>
+        <div class="progresso">
+          <div class="progresso-texto">
+            <span>Etapas da missão</span>
+            <strong id="contador">0 de 3</strong>
+          </div>
+          <div class="barra"><div id="barra-preenchida"></div></div>
+        </div>
+        <ol id="lista-etapas" class="etapas"></ol>
+        <button id="botao-proximo" class="botao principal">Concluir próxima etapa</button>
+      </div>
+
+      <div id="tela-final" class="tela escondido">
+        <div class="icone sucesso">✓</div>
+        <h2>Missão concluída!</h2>
+        <p id="mensagem-final">Parabéns! Você completou todos os passos.</p>
+        <button id="botao-reiniciar" class="botao principal">Jogar novamente</button>
+      </div>
+    </section>
+
+    <footer>Feito para praticar JavaScript, lógica e criatividade.</footer>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
